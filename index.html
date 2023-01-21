@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head> <!-- o head serve pra definir os metadados (informações) da página. ex: titulo, onde ta o css, onde ta a fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- onde ta a fonte 1 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- onde ta a fonte 2 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    /> <!-- onde ta a fonte 3 -->
+    <meta charset="UTF-8" /> <!-- pra falar q to escrevendo com letras -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- responsivo no celular -->
+    <title>Habits</title> <!-- pra colocar o título (como fica escrito na aba) -->
+
+    <link rel="stylesheet" href="./style.css" /> <!-- onde ta o css -->
+  </head>
+  <body>
+    <header> <!-- tag para separar oq é o cabeçalho do site -->
+      <img src="./assets/logo.svg" alt="logo" /> <!-- onde a imagem ta -->
+
+      <button> <!-- tag para fazer um botão -->
+        <img src="./assets/plus.svg" alt="ícone sinal de mais roxo" /> <!-- onde a imagem q colocou dentro do botão ta -->
+
+        <div>Registrar o meu dia</div> <!-- div é um bloco q ocupa uma nova linha e pega o maximo da pagina q ele conseguir horizontalmente, verticalmente é da altura doq colocar dentro -->
+      </button>
+    </header>
+
+    <form id="form-habits"> <!-- form é a forma do usuário interagir com o site, o id serve pra nomear o elemento, por ex, se tiver varios formularios cada um tem q ter um id diferente -->
+      <div class="habits"> <!-- como se fosse um grupo com coisas, cada coisa dentro do grupo é uma coisa -->
+        <div class="habit" data-name="run">🏃‍♂️</div>
+        <div class="habit" data-name="water">💧</div>
+        <div class="habit" data-name="food">🍎</div>
+        <div class="habit" data-name="journal">📕</div>
+        <div class="habit" data-name="takePills">💊</div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
